@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jasnaath Ji Fashion, Jaitasar - Fashion and clothing store.">
+  <title>Jasnaath Ji Fashion | Jaitasar</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#faf7f2;color:#241b16;line-height:1.6}
+    header{position:sticky;top:0;z-index:10;background:#17110e;color:#fff;padding:14px 18px;box-shadow:0 2px 12px #0002}
+    .nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .brand{font-size:21px;font-weight:800;letter-spacing:.4px}
+    .brand span{color:#e8b35a}
+    nav a{color:#fff;text-decoration:none;margin-left:14px;font-size:14px}
+    .hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;
+      background:linear-gradient(#17110dcc,#17110db8),url("shop.jpg") center/cover}
+    .hero-inner{max-width:780px;color:#fff}
+    .tag{display:inline-block;border:1px solid #e8b35a;border-radius:50px;padding:6px 15px;color:#f3c56e;margin-bottom:18px;font-size:13px}
+    h1{font-size:clamp(38px,9vw,72px);line-height:1.05;margin-bottom:15px}
+    .hero p{font-size:18px;color:#f3eee8;margin-bottom:28px}
+    .btn{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:700;margin:5px}
+    .primary{background:#e8b35a;color:#17110e}
+    .outline{border:1px solid #fff;color:#fff}
+    section{max-width:1100px;margin:auto;padding:65px 20px}
+    .title{text-align:center;margin-bottom:30px}
+    .title h2{font-size:32px;margin-bottom:6px}
+    .title p{color:#74685f}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .about img{width:100%;border-radius:16px;box-shadow:0 12px 35px #0002}
+    .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 8px 25px #00000012}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{text-align:center;background:#fff;padding:28px 18px;border-radius:14px;box-shadow:0 6px 22px #00000010}
+    .icon{font-size:35px;margin-bottom:10px}
+    .contact{background:#17110e;color:#fff;border-radius:20px;padding:35px;text-align:center}
+    .contact p{color:#ddd;margin:8px 0}
+    footer{text-align:center;background:#0e0a08;color:#bbb;padding:20px;font-size:13px}
+    .whatsapp{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;
+      display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:27px;box-shadow:0 5px 20px #0004;z-index:20}
+    @media(max-width:700px){
+      nav{display:none}.about{grid-template-columns:1fr}.features{grid-template-columns:1fr}
+      section{padding:48px 16px}.hero{min-height:72vh}.contact{padding:28px 18px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">Jasnaath Ji <span>Fashion</span></div>
+    <nav>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#collection">Collection</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="tag">FASHION • JAITSAR</div>
+      <h1>Jasnaath Ji Fashion</h1>
+      <p>आपके फैशन और कपड़ों की पसंद के लिए Jaitasar में आपका अपना फैशन स्टोर।</p>
+      <a class="btn primary" href="#collection">Collection देखें</a>
+      <a class="btn outline" href="tel:+919785499516">📞 Call Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="title"><h2>हमारे बारे में</h2><p>Style • Quality • Trust</p></div>
+    <div class="about">
+      <img src="shop.jpg" alt="Jasnaath Ji Fashion shop in Jaitasar">
+      <div class="card">
+        <h2>Jasnaath Ji Fashion</h2>
+        <p style="margin-top:12px">हमारा लक्ष्य ग्राहकों को अच्छी पसंद, शानदार स्टाइल और भरोसेमंद सेवा देना है। Jaitasar में फैशन और कपड़ों की खरीदारी के लिए हमसे संपर्क करें।</p>
+        <p style="margin-top:15px"><b>📍 Address:</b> Jaitasar, Rajasthan - 331802</p>
+        <p><b>📞 Contact:</b> 9785499516</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection">
+    <div class="title"><h2>Our Collection</h2><p>अपनी पसंद का स्टाइल चुनें</p></div>
+    <div class="features">
+      <div class="feature"><div class="icon">👔</div><h3>Men's Fashion</h3><p>Men's fashion और कपड़ों की शानदार range.</p></div>
+      <div class="feature"><div class="icon">👗</div><h3>Women's Fashion</h3><p>Women के लिए stylish और सुंदर collection.</p></div>
+      <div class="feature"><div class="icon">✨</div><h3>New Styles</h3><p>नए designs और trending fashion के लिए संपर्क करें.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Jasnaath Ji Fashion से संपर्क करें</h2>
+      <p>Jaitasar, Rajasthan - 331802</p>
+      <p>📞 9785499516</p>
+      <div style="margin-top:20px">
+        <a class="btn primary" href="tel:+919785499516">Call करें</a>
+        <a class="btn outline" href="https://wa.me/919785499516?text=Namaste%20Jasnaath%20Ji%20Fashion%2C%20mujhe%20aapki%20collection%20ke%20baare%20mein%20jankari%20chahiye." target="_blank">WhatsApp करें</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Jasnaath Ji Fashion, Jaitasar. All Rights Reserved.</footer>
+<a class="whatsapp" href="https://wa.me/919785499516" target="_blank" aria-label="WhatsApp">◉</a>
+</body>
+</html>
